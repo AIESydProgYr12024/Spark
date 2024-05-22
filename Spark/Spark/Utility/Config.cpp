@@ -9,6 +9,7 @@
 #include <raylib/raylib.h>
 
 #include "StringUtils.h"
+#include "Spark/Maths/Vec2.h"
 
 using pugi::xml_parse_result;
 using pugi::xml_node;
@@ -171,7 +172,7 @@ void Config::HandleVector(const string& _category, const string& _id, const stri
 
 	const vector<float> values = StringUtils::Split<float>(_value, ',', converter);
 
-	m_values[_category][_id] = new ConfigValue(new Vector2{ values[0], values[1] });
+	m_values[_category][_id] = new ConfigValue(new Vec2{ values[0], values[1] });
 }
 
 void Config::HandleColor(const string& _category, const string& _id, const string& _value)

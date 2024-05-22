@@ -37,6 +37,12 @@
     <Filter Include="Spark\Source Files\Level">
       <UniqueIdentifier>{1f705f70-60b1-4e9e-a862-b377f0e91af9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Spark\Header Files\Maths">
+      <UniqueIdentifier>{5baa9bf4-8fcb-4c55-a93f-5728c15e3d50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spark\Source Files\Maths">
+      <UniqueIdentifier>{bea89827-0573-40f6-a126-491f00ef309a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="assets\config.xml">
@@ -62,6 +68,18 @@
     <ClCompile Include="Spark\Level\LevelManager.cpp">
       <Filter>Spark\Source Files\Level</Filter>
     </ClCompile>
+    <ClCompile Include="Spark\Maths\Mat3.cpp">
+      <Filter>Spark\Source Files\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Spark\Maths\Vec2.cpp">
+      <Filter>Spark\Source Files\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Spark\Maths\Vec3.cpp">
+      <Filter>Spark\Source Files\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Spark\Maths\MathFunctions.cpp">
+      <Filter>Spark\Source Files\Maths</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Spark\Utility\Config.h">
@@ -78,6 +96,18 @@
     </ClInclude>
     <ClInclude Include="Spark\Level\LevelManager.h">
       <Filter>Spark\Header Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Spark\Maths\Mat3.h">
+      <Filter>Spark\Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Spark\Maths\Vec2.h">
+      <Filter>Spark\Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Spark\Maths\Vec3.h">
+      <Filter>Spark\Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Spark\Maths\MathFunctions.h">
+      <Filter>Spark\Header Files\Maths</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
